@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Name"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="39dp"
+        android:id="@+id/edName" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password1"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edName"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edPas"
+        />
+
+
+    <TextView
+        android:id="@+id/edPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="phone"
+        android:textColorHint="#fff"
+        android:ems="3"
+        android:layout_below="@+id/edPas"
+        android:layout_marginTop="34dp" />
+
+
+    <TextView
+        android:id="@+id/edEmil"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="#fff"
+        android:ems="3"
+        android:layout_below="@+id/edPas"
+        android:layout_marginTop="100dp" />
+
+
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpas"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:background="#40FFFF00"
+        android:onClick="out"
+        android:text="LOG OUT "
+        app:layout_constraintStart_toStartOf="@+id/log"
+        app:layout_constraintTop_toTopOf="@+id/rg" />
+
+
+    <Button
+        android:id="@+id/prntInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="shwIDInfo"
+        android:text="Query"
+        android:layout_marginTop="500dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/idTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="300dp"
+        android:text="Enter the ID for luker:"
+        app:layout_constraintStart_toStartOf="@+id/idInp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/prntInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTxtView" />
+
+
+
+    <TextView
+        android:id="@+id/naTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="42dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/phTxtView"
+        app:layout_constraintStart_toStartOf="@+id/phTxtView" />
+
+    <TextView
+        android:id="@+id/phTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Phone"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/delBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eETxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="160dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/phTxtView"
+        app:layout_constraintStart_toStartOf="@+id/phTxtView"/>
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="delTsk"
+        android:layout_marginTop="600dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintStart_toStartOf="@+id/backBtn" />
+
+
+
+</RelativeLayout>

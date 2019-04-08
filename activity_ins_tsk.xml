@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D8CA1A3"
+    tools:context=".insTsk">
+
+
+    <TextView
+        android:text="REGISTER"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Name"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edName" />
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="phone"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edName"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edPas"
+        />
+
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="password"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edPas"
+        android:layout_marginTop="20dp" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Emile"
+        android:textColorHint="#FFFFFF"
+        android:ems="10"
+        android:layout_below="@+id/edPhone"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edEmil" />
+
+
+    <EditText
+        android:id="@+id/edCredit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="pCredit"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edEmil"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="400dp"
+        android:onClick="regnClicked"
+        android:text=" GO "
+        android:background="#40FFFF00"
+        app:layout_constraintStart_toStartOf="@+id/edPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="500dp"
+        android:onClick="backTo"
+        android:text="Back to the main activity"
+        android:background="#40FFFF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
